@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+	<title>浮动彩色块</title>
+	<style type="text/css">
+   .fl{
+        float: left;
+       }
+       .fr{
+        float: right;
+       }
+    .clear:after{
+      content:'';
+      display: block;
+      clear: both;
+    }
+       .content{
+       	width: 500px;
+        border:10px solid #cfcfcf;
+       }
+       .left{
+        width: 200px;
+        height: 400px;
+       	background: green;
+       }
+       .right{
+        width: 300px;
+        height: 400px;
+       }
+      .one{
+       	height: 80px;
+       	background: orange;
+       }
+      .a{
+        width: 150px;
+        height: 160px;
+        background:hotpink;
+       }
+       .b{
+        width: 150px;
+       	height: 160px;
+       	background:skyblue;
+       }
+      .three{
+      	height: 160px;
+       	background: blue;
+       }
+
+	</style>
+  
+</head>
+<body>
+
+<div class="content clear">
+     <div class="left fl"></div>
+       <div class="right fr">
+     	    <div class="one"></div>
+             <div class="two clear">
+			         <div class="a fl"></div>
+			         <div class="b fr"></div>
+                </div>
+         <div class="three"></div>
+     </div>
+
+
+
+
+
+
+
+</div>
+
+
+	  
+
+</body>
+</html>
